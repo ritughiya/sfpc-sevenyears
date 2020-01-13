@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'Louize Display';
+  src: url('LouizeDisplay-Italic.ttf') format('truetype'); /* IE6-IE8 */
+}
+
+html{
+	margin:0;
+}
+body{
+	background-color: #e3dcdc;
+	color: #000000;
+	font-family: Arial;
+	font-weight: normal;
+	position:relative;
+	min-width: 100%;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+.section2{
+	background-color: #000000;
+	color: #e3dcdc;
+	padding-top: 6%;
+}
+
+.wrapper{
+		background-color: #e3dcdc;
+}
+
+.space{
+	margin-top: 10%;
+}
+
+header{
+	position: fixed;
+	font-size: 1.25em;
+	left: 50%;
+	top: 4%;
+    transform: translate(-50%, 0);
+}
+
+footer{
+		position: fixed;
+	font-size: 1.25em;
+	left: 50%;
+	bottom: 4%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.center{
+	text-align: center;
+}
+
+.intro,
+.credits{
+	width: 50%;
+	margin: 6% auto 0 auto;
+	padding-bottom: 2%;
+}
+
+.credits{
+	margin-top:10%;
+	padding-bottom: 10%;
+	font-size: 0.85em;
+}
+
+/* fireworks styles */
+
+.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.fixed img{
+	width: 80%;
+}
+/* typeface styles */
+
+.serif{
+	font-family: Louize Display;
+}
+
+.sans-small{
+	font-size: 0.85em;
+}
+
+.serif-med{
+		font-size: 1em;
+}
+
+.names .serif{
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+.serif-header-main{
+	width:100%;
+	font-size: 1.5em;
+	margin-bottom: 2%;
+}
+
+.date,
+.role{
+	text-transform: uppercase;
+}
+
+.tab{
+	padding-left: 20%;
+}
+
+.right{
+	text-align: right;
+}
+
+li{
+	margin-top: 6%;
+}
+
+hr{
+  border-top: 2px solid black;
+}
+
+.section-header{
+	font-size: 1.25em;
+	text-align: center;
+}
+
+.project{
+	font-size: 0.85em;
+}
+
+.project-title, .artist-info{
+	text-transform: uppercase;
+}
+
+.project-title, .project-desc, .artist-info{
+	margin-top: 2%;
+}
+
+
+/* card styles */
+
+.cards{
+	padding-top:6%;
+	position: relative;
+	width:100%;
+	height:730px;
+}
+
+.card-1{
+	position: absolute;
+	top: 2%;
+	left: 11%;
+	width:40%;
+	border: 3px solid #000;
+	padding: 1% 2%;
+	transition: transform .75s;
+		z-index: 100;
+				background-color: #e3dcdc;
+}
+
+.card-1:HOVER{
+		transform:rotate(-3deg);
+	}
+
+.card-2{
+	position:absolute;
+		width:40%;
+	left: 50%;
+	margin-top:5%;
+	  transform: rotate(3deg);
+	background-color: #000;
+	color: #e3dcdc;
+	padding: 1% 2%;
+	transition: transform .75s;
+		z-index: 100;
+				
+
+}
+
+.card-2:hover{
+	transform:rotate(0deg);
+}
+
+/* project styles */
+
+.thumbnails{
+	width: 80%;
+	margin: 6% auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 4%;
+
+
+}
+
