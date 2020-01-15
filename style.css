@@ -75,7 +75,7 @@ footer{
 }
 
 .intro{
-	width: 35%;
+	width: 50%;
 	padding-bottom: 2%;
 }
 
@@ -307,12 +307,12 @@ a{
 			margin: 3% 0 2% 50%;
 	}
 	.intro{
-	width: 60%;
+	width:70%;
 	padding-bottom: 2%;
 }
 
 .intro{
-		margin: 17% auto 0 auto;
+		margin: 45% auto 0 auto;
 		font-size: 0.85em;
 }
 
