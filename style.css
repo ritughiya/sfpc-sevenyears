@@ -21,10 +21,14 @@ header{
 /*		border-bottom: solid 3px black;
 */}
 
+.wrapper-margin{
+
+}
+
 .section2{
 	background-color: #000000;
 	color: #e3dcdc;
-	padding-top: 4%;
+	padding-top: 6%;
 }
 
 .wrapper{
@@ -86,7 +90,7 @@ footer{
 
 .credits{
 	width: 80%;
-			margin: 0% auto 0 auto;
+			margin: 6% auto 0 auto;
 	padding-bottom: 10%;
 	font-size: 0.85em;
 }
@@ -97,7 +101,7 @@ hr.credits{
 }
 
 .space2{
-	margin-top: 5%;
+	margin-top: 8%;
 }
 /* fireworks styles */
 
@@ -401,7 +405,7 @@ a{
 
 .credits{
 	text-align: left;
-			margin: 2% auto 0 auto;
+			margin: 6% auto 0 auto;
 	font-size: 0.85em;
 		width: 95%;
 	padding-bottom: 20%;
@@ -417,4 +421,13 @@ a{
 
 
 
+}
+
+@media print {
+   header, footer, nav, aside{
+      display: none;
+   }
+   #fireworks{
+   	opacity: 50%;
+   }
 }
