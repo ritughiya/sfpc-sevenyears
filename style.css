@@ -299,19 +299,20 @@ a{
 		font-size: 1.25em;
 	}
 
-
+	header{
+		font-size: 1em;
+	}
 
 	.header-copy{
-		font-size: 0.85em;
 			margin: 3% 0 2% 50%;
 	}
 	.intro{
-	width: 65%;
+	width: 60%;
 	padding-bottom: 2%;
 }
 
 .intro{
-		margin: 17% auto 0 auto;
+		margin: 15% auto 0 auto;
 		font-size: 0.85em;
 }
 
