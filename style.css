@@ -394,8 +394,7 @@ a{
 	font-size: 0.85em;
 	margin: 1% 10% 1% 10%;
         text-align: center;
-        display: flex;
-        justify-content: space-between;
+        display: block;
 }
 
 
