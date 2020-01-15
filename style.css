@@ -20,7 +20,7 @@ body{
 .section2{
 	background-color: #000000;
 	color: #e3dcdc;
-	padding-top: 6%;
+	padding-top: 4%;
 }
 
 .wrapper{
@@ -28,39 +28,61 @@ body{
 }
 
 .space{
-	margin-top: 10%;
+	margin-top: 20%;
 }
 
 header{
+	background-color: #e3dcdc;
 	position: fixed;
 	font-size: 1.25em;
-	left: 50%;
-	top: 4%;
+	width:100%;
+	top: 0;
+	left:0;
+    z-index: 1000;
+}
+
+.header-copy{
+	margin: 1% 0 1% 50%;
     transform: translate(-50%, 0);
+        text-align: center;
 }
 
 footer{
+	background-color: #000000;
+	color: #e3dcdc;
 		position: fixed;
-	font-size: 1.25em;
-	left: 50%;
-	bottom: 4%;
-    transform: translate(-50%, 0);
-    text-align: center;
+	left: 0;
+	bottom: 0;
+	z-index: 1000;
+	width:100%;
 }
+
+.footer-copy{
+	margin: 1% 10% 1% 10%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+}
+
+
 
 .center{
 	text-align: center;
 }
 
-.intro,
-.credits{
-	width: 50%;
-	margin: 6% auto 0 auto;
+.intro{
+	width: 35%;
 	padding-bottom: 2%;
 }
 
+.intro{
+		margin: 5% auto 0 auto;
+		font-size: 0.85em;
+}
+
 .credits{
-	margin-top:10%;
+	width: 80%;
+			margin: 5% auto 0 auto;
 	padding-bottom: 10%;
 	font-size: 0.85em;
 }
@@ -75,8 +97,50 @@ footer{
 }
 
 .fixed img{
-	width: 80%;
+	width: 60%;
 }
+
+.fireworks{
+	z-index: 1500;
+	display: flex;
+	justify-content: space-between;
+	pointer-events: none;
+
+width: 100%;}
+
+.fireworks-left,
+.fireworks-right{
+	display: flex;
+	flex-direction:column;
+}
+
+.fireworks1left,
+.fireworks2left,
+.fireworks1right,
+.fireworks2right{
+	width:70%;
+}
+
+.fireworks1left{
+	margin-left: 30%;
+	margin-top: 0%;
+}
+
+.fireworks2left{
+	margin-top: 0%;
+	margin-left: -50%%;
+}
+
+.fireworks1right{
+	margin-left: -10%;
+	margin-top: 10%;
+}
+
+.fireworks2right{
+	margin-left: 30%;
+	margin-top: -15%;
+}
+
 /* typeface styles */
 
 .serif{
@@ -132,19 +196,36 @@ hr{
 	font-size: 0.85em;
 }
 
+.project img{
+	width: 100%;
+	height: auto;
+}
+
 .project-title, .artist-info{
 	text-transform: uppercase;
 }
 
-.project-title, .project-desc, .artist-info{
+.project-title{
+		margin-top:4%;
+}
+
+.project-desc{
 	margin-top: 2%;
 }
 
+.artist-info{
+	margin-top:4%;
+	text-decoration: underline;
+}
 
+a{
+	text-decoration: underline;
+	color: #e3dcdc;
+}
 /* card styles */
 
 .cards{
-	padding-top:6%;
+	padding-top:2%;
 	position: relative;
 	width:100%;
 	height:730px;
@@ -152,7 +233,7 @@ hr{
 
 .card-1{
 	position: absolute;
-	top: 2%;
+	top: 1%;
 	left: 11%;
 	width:40%;
 	border: 3px solid #000;
@@ -163,7 +244,7 @@ hr{
 }
 
 .card-1:HOVER{
-		transform:rotate(-3deg);
+		transform:rotate(-7deg);
 	}
 
 .card-2{
@@ -182,18 +263,124 @@ hr{
 }
 
 .card-2:hover{
-	transform:rotate(0deg);
+	transform:rotate(10deg);
 }
 
 /* project styles */
 
 .thumbnails{
 	width: 80%;
-	margin: 6% auto;
-	display: grid; 
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 4%;
+	margin: 4% auto 2% auto;
+	display: flex;
+	flex-wrap: wrap; 
+	  justify-content:space-between;
+}
+
+.project{
+	width: 47%;
+	margin-bottom: 6%;
+}
+
+@media (min-width: 320px) and (max-width: 1000px) {
+	.header-copy{
+		font-size: 0.85em;
+	}
+	.intro{
+	width: 65%;
+	padding-bottom: 2%;
+}
+
+.intro{
+		margin: 10% auto 0 auto;
+		font-size: 0.85em;
+}
+
+.cards{
+  	height: auto;
+  }
+
+  .cards, .card-1, .card-2{
+  	position: static;
+  }
+
+  .card-1{
+  	width:80%;
+  	  	margin-top:0;
+  	margin: 0 auto;
+  }
+
+  .card-2{
+  	width:80%;
+  	margin-top:0;
+  	margin: 0 auto;
+  }
+
+  .card-1:HOVER{
+		transform:rotate(0deg);
+	}
+
+
+.card-2:hover{
+	transform:rotate(0deg);
+}
+
+.fireworks1left,
+.fireworks2left,
+.fireworks1right,
+.fireworks2right{
+	width:40%;
+}
+
+.fireworks1left{
+	margin-left: 0%;
+	margin-top: 0%;
+}
+
+.fireworks2left{
+	margin-top: 0%;
+	margin-left: -50%%;
+}
+
+.fireworks1right{
+	margin-left: 60%;
+	margin-top: 0%;
+}
+
+.fireworks2right{
+	margin-left: 60%;
+	margin-top: 0%;
+}
+.date-copy{
+	font-size: 0.85em;
+}
+
+.thumbnails{
+	width: 80%;
+	margin: 4% auto 2% auto;
+	display: block;
+}
+
+.project{
+	width: 100%;
+	margin-bottom: 10%;
+}
+
+.credits{
+	text-align: left;
+			margin: 15% auto 0 auto;
+	font-size: 0.85em;
+		width: 80%;
+	padding-bottom: 15%;
+}
+
+.footer-copy{
+	font-size: 0.85em;
+	margin: 1% 10% 1% 10%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+}
+
 
 
 }
-
