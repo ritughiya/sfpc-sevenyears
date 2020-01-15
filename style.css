@@ -17,6 +17,10 @@ body{
 	font-size: 18px;
 }
 
+header{
+/*		border-bottom: solid 3px black;
+*/}
+
 .section2{
 	background-color: #000000;
 	color: #e3dcdc;
@@ -296,8 +300,10 @@ a{
 	}
 
 
+
 	.header-copy{
 		font-size: 0.85em;
+			margin: 3% 0 2% 50%;
 	}
 	.intro{
 	width: 65%;
@@ -305,7 +311,7 @@ a{
 }
 
 .intro{
-		margin: 15% auto 0 auto;
+		margin: 17% auto 0 auto;
 		font-size: 0.85em;
 }
 
