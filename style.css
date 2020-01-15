@@ -82,11 +82,19 @@ footer{
 
 .credits{
 	width: 80%;
-			margin: 5% auto 0 auto;
+			margin: 0% auto 0 auto;
 	padding-bottom: 10%;
 	font-size: 0.85em;
 }
 
+hr.credits{
+	  border-top: 2px solid #e3dcdc;
+
+}
+
+.space2{
+	margin-top: 5%;
+}
 /* fireworks styles */
 
 .fixed{
@@ -270,7 +278,7 @@ a{
 
 .thumbnails{
 	width: 80%;
-	margin: 4% auto 2% auto;
+	margin: 4% auto 0 auto;
 	display: flex;
 	flex-wrap: wrap; 
 	  justify-content:space-between;
@@ -282,6 +290,12 @@ a{
 }
 
 @media (min-width: 320px) and (max-width: 1000px) {
+
+	.serif-header-main {
+		font-size: 1.25em;
+	}
+
+
 	.header-copy{
 		font-size: 0.85em;
 	}
@@ -291,7 +305,7 @@ a{
 }
 
 .intro{
-		margin: 10% auto 0 auto;
+		margin: 15% auto 0 auto;
 		font-size: 0.85em;
 }
 
@@ -304,15 +318,18 @@ a{
   }
 
   .card-1{
-  	width:80%;
+  	width:95%;
   	  	margin-top:0;
   	margin: 0 auto;
+  		border: 1px solid #000;
+
   }
 
   .card-2{
-  	width:80%;
+  	width:95%;
   	margin-top:0;
   	margin: 0 auto;
+	  transform: rotate(1deg);
   }
 
   .card-1:HOVER{
@@ -355,7 +372,7 @@ a{
 }
 
 .thumbnails{
-	width: 80%;
+	width: 95%;
 	margin: 4% auto 2% auto;
 	display: block;
 }
@@ -367,9 +384,9 @@ a{
 
 .credits{
 	text-align: left;
-			margin: 15% auto 0 auto;
+			margin: 2% auto 0 auto;
 	font-size: 0.85em;
-		width: 80%;
+		width: 95%;
 	padding-bottom: 15%;
 }
 
